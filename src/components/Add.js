@@ -10,7 +10,7 @@ const Add = (props) => {
     formData.append("url", url);
     formData.append("email", email);
     const response = await axios.post(
-      "http://localhost:5000/api/insert",
+      "http://localhost:9000/api/insert",
       formData
     );
     let emails = [...props.emails, response.data.email];
